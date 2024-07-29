@@ -49,4 +49,5 @@ jobs:
           -H "Content-Type: application/json" \
           -H "Authorization: Bearer $RENDER_API_KEY" \
           -d '{"branch":"main"}' \
-          https://api.render.com/deploy/srv-co62884f7o1s73aa7jr0?key=$RENDER_DEPLOY_HOOK
+          https://api.render.com/deploy/srv-cqjl9j0gph6c73991dt0?key=$RENDER_DEPLOY_HOOK
+
