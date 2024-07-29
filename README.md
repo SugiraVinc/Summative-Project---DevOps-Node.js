@@ -31,8 +31,9 @@ This project is a Node.js based blogging system API that provides essential func
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/SugiraVinc/Summative-Project_DevOps.git
-   cd Summative-Project_DevOps
+   git clone https://github.com/SugiraVinc/Summative-Project---DevOps-Node.js.git
+   cd Summative-Project---DevOps-Node.js
+
    ```
 
 2. Install dependencies:
