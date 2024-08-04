@@ -85,4 +85,5 @@ We welcome contributions from the community. To contribute, follow these steps:
 3. Make your changes and commit them: `git commit -m 'Add some feature'`.
 4. Push to the branch: `git push origin feature/your-feature-name`.
 5. Open a pull request.
-# Summative-Project---DevOps-Node.js
+## CI - CD
+Used GitHub Actions to automate `build`, `test`, and `deploy`.
