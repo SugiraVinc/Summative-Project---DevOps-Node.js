@@ -87,7 +87,7 @@ try {
 
 const logoutUser = async(req, res) => {
  try {
-     res.cookie('jwt', '', {
+     res.cookie('jwt', '', { //If user loggedout, cookie remains but empty(no token)
         maxAge: 0
     })
 

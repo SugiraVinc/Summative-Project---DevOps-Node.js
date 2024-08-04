@@ -10,4 +10,5 @@ router.put('/edit',checkAuth,updateUser)
 router.get('/user', checkAuth, getUser)
 router.post('/delete', logoutUser)
 
+
 export default router

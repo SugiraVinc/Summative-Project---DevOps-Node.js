@@ -17,10 +17,11 @@ app.use(cors({
    credentials: true 
 }))
 app.use(cookieParser())
-app.use('/api/users', userRoutes)
-app.use('/api/blogs', blogRoutes)
+app.use('/api/users', userRoutes) //user api access 
+app.use('/api/blogs', blogRoutes) // blogs api access
 app.get('/', (req, res) => {
    res.send('API is running...')
 })
+
 
 export default app
