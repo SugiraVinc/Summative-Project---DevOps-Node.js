@@ -11,12 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-      - name: Install dependencies
-        run: npm install
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build Docker image
+        run: |
+          docker build -t nodejsdevops-api-api:latest .
 
   test:
     runs-on: ubuntu-latest
@@ -49,5 +50,5 @@ jobs:
           -H "Content-Type: application/json" \
           -H "Authorization: Bearer $RENDER_API_KEY" \
           -d '{"branch":"main"}' \
-          https://api.render.com/deploy/srv-cqjl9j0gph6c73991dt0?key=$RENDER_DEPLOY_HOOK
+          https://api.render.com/deploy/srv-cqr2jcd6l47c73b456k0?key=$RENDER_DEPLOY_HOOK
 
